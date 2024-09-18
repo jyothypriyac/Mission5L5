@@ -1,0 +1,47 @@
+This is the trademe project
+
+
+Mongo DB should be set up locally before you need to make this application run.
+
+CLI
+
+cd to folder Trademe-CLI
+
+Create .env file inside the Trademe-CLI Folder:
+    Add a variable named DATABASE_URL pointing towards your conneciton string
+    eg: DATABASE_URL=mongodb://localhost:1234/trademecli
+
+
+The commands are as follows
+
+to add - node commands.js add sony sonybravia1.1  4700 1200
+to find - node commands.js find sony
+to Update -node commands.js update <Find the ID from find and copy it here> sonytv sonybraviaLatestModel 5900 2500
+        - it will update the record using the ID of the item
+to delete -node commands.js remove <Find the ID from find and copy it here>
+Seed Data -  node commands.js seedData
+ - it will insert around 50 records in the table
+
+
+
+API Project
+
+Once you clone this repository, you need to navigate to the trademe-Backend folder and then follow the steps below.
+
+Steps to follow:
+- npm install
+- npm run dev
+
+
+Inside the folder trademe-Backend folder you need to create a .env file
+and you need to add two variables in it DATABASE_URL and API_PORT
+
+eg:
+DATABASE_URL=mongodb://localhost:1234/trademecli
+API_PORT=4000
+
+
+API created GET http://localhost:3000/api/trademe/honda
+
+
+
